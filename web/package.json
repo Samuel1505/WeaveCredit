@@ -1,0 +1,27 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@initia/initia.js": "*",
+    "@initia/interwovenkit-react": "*",
+    "@tanstack/react-query": "*",
+    "buffer": "*",
+    "lucide-react": "*",
+    "react": "*",
+    "react-dom": "*",
+    "util": "*",
+    "viem": "*",
+    "wagmi": "*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "*",
+    "vite": "*",
+    "vite-plugin-node-polyfills": "*"
+  }
+}
