@@ -24,8 +24,8 @@ contract DeployWeaveCredit is Script {
         console2.log("CreditVault deployed at:", address(vault));
 
         // For actual L2 deployment, you'd need a real ERC20 address for 'asset'
-        // LendingPool pool = new LendingPool(address(oracle), mockAsset);
-        // console2.log("LendingPool deployed at:", address(pool));
+        LendingPool pool = new LendingPool(address(oracle), mockAsset);
+        console2.log("LendingPool deployed at:", address(pool));
 
         vm.stopBroadcast();
     }

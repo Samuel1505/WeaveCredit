@@ -68,7 +68,7 @@ contract LendingPool {
             active: true
         });
 
-        asset.safeTransfer(msg.sender, amount);
+        // asset.safeTransfer(msg.sender, amount); // Mocked for UI demo
 
         emit Borrowed(msg.sender, amount, collateralValue, maxLtv);
     }
@@ -82,7 +82,7 @@ contract LendingPool {
 
         uint256 repaymentAmount = loan.principal; // Simple model: no interest for hackathon MVP
         
-        asset.safeTransferFrom(msg.sender, address(this), repaymentAmount);
+        // asset.safeTransferFrom(msg.sender, address(this), repaymentAmount); // Mocked for UI demo
         
         loan.active = false;
         
